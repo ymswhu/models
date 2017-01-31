@@ -314,6 +314,7 @@ def _configure_optimizer(learning_rate):
 
 
 def _add_variables_summaries(learning_rate):
+    #so strange
   summaries = []
   for variable in slim.get_model_variables():
     summaries.append(tf.histogram_summary(variable.op.name, variable))
@@ -582,4 +583,5 @@ def main(_):
 
 
 if __name__ == '__main__':
+
   tf.app.run()
